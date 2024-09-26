@@ -1,31 +1,10 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 17.09.2024 01:04:53
-// Design Name: 
-// Module Name: CRC_16_CCITT_Parallel
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-
-
 //////////////////////////////////////////////////////////////////////////////
 // Performs CRC-16-CCITT on input bytes.
 // Polynomial is f(x) = x^16+x^12+x^5+1
 // In FPGA it's a linear feedback shift register (LFSR).
 // Set i_Init to initialize CRC to 0xFFFF (initial value).
-// Drive DV when input byte is valid.
+// Drive DV when the input byte is valid.
 // CRC output will be maintained when i_Init and i_DV are low.
 //////////////////////////////////////////////////////////////////////////////
 module CRC_16_CCITT_Parallel
